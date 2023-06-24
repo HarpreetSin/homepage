@@ -1,0 +1,434 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    color:white;
+    background-color: rgb(0,0,0,0.7);
+    animation-name: slide;
+    animation-duration: 5s;
+    z-index: 1;
+    height: 80px;
+}
+
+@keyframes slide {
+    0%   {
+        width: 0%;
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+header h1 a{
+    color: white;
+}
+
+header h1 a:hover{
+    color: #c3eadf;
+}
+
+header h1 a:visited{
+    color: white;
+}
+
+.black-color {
+    position: absolute;
+    height: 665px;
+    width: 100%;
+    background-color: rgba(36, 18, 51, 0.7);
+    top: 79px;
+    animation-name: changes;
+    animation-duration: 5s;
+}
+
+@keyframes changes {
+    0%   {
+        width: 0%;
+        height: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        height: 620px;
+        opacity: 1;
+    }
+}
+
+.topNameBox {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+    padding: 120px 20px 20px 50px;
+    text-align: center;
+    color: #8AC7B6;
+    animation-name: changes2;
+    animation-duration: 40s; 
+    left: -100px;   
+}
+
+@keyframes changes2 {
+    0% {
+        outline-style: dotted;
+        width: 0px;
+        left: -100px;
+    }
+    7.5% {
+        outline-style: dotted;
+        width: 0px;
+        left: -100px; 
+    }
+    25% {
+        outline-style: dotted;
+        width: 400px;
+        left: 0px;
+    }
+    50% {
+        outline-style: dotted;
+        width: 400px;
+        left: 0px;
+    }
+    90% {
+        outline-style: dotted;
+        width: 400px;
+        left: 0px;
+    }
+    99% {
+        outline-style: dotted;
+    }
+    100% {
+        outline-style: none;
+        width: 0px;
+        left: -100px;
+    }
+}
+
+.topNameBox h1 {
+    margin-left: -1000px;
+    animation-name: text;
+    animation-duration: 20s; 
+}
+
+@keyframes text {
+    0% {
+        margin-left: -1000px;  
+    }
+    25% {
+      margin-left: -1000px; 
+    }
+    50% {
+        margin-left: 0px;
+    }
+    75% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -1000px;
+    }
+}
+
+.topNameBox2 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+    padding: 120px 20px 20px 50px;
+    text-align: center;
+    color: #8AC7B6;
+   left: 0px; 
+}
+
+.topNameBox2 h1 {
+    margin-left: -1000px;
+    animation-name: text2;
+    animation-duration: 40s; 
+}
+
+
+@keyframes text2 {
+    0% {
+        margin-left: -1000px;  
+    }
+    25% {
+      margin-left: -1000px; 
+    }
+    50% {
+        margin-left: -1000px;
+    }
+    70% {
+        margin-left: 0px;
+    }
+    85% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -1000px;
+    }
+}
+
+.namebox {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+    padding: 120px 20px 20px 50px;
+    text-align: center;
+    color: #8AC7B6;
+   left: 0px; 
+}
+
+.mainpic {
+    background-image:url(https://thumbs.dreamstime.com/b/two-different-corp-s-nature-photography-village-life-pakistan-nauman-khawar-basti-daad-tehsil-shujabad-district-215164452.jpg);
+    width:100%;
+    height:745px;
+    background-size:cover;
+}
+
+#backgroundpic {
+    width: 0px;
+    height: 0px;
+}
+
+.animationBox {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    z-index: 1;
+    padding: 120px 20px 20px 50px;
+    text-align: center;
+    color: #8AC7B6;
+    font-family: "Sofia", sans-serif;
+    animation-name: punjab;
+    animation-duration: 40s;
+    background-image: url();   
+    border-radius: 150px;
+    background-size: cover;
+    right: 0px;  
+}
+
+@keyframes punjab {
+    0% {
+        right: -1000;  
+        background-image: url(https://cdn.dribbble.com/users/2228862/screenshots/13561746/ezgif.com-video-to-gif__3_.gif);
+    }
+    25% {
+        right: 0px;  
+        background-image: url(https://cdn.dribbble.com/users/2228862/screenshots/13561746/ezgif.com-video-to-gif__3_.gif);
+      }
+    40% {
+        right: 0px;  
+        background-image: url(https://cdn.dribbble.com/users/2228862/screenshots/13561746/ezgif.com-video-to-gif__3_.gif);
+      }
+    49% {
+        right: -1000px;
+        background-image: url(https://cdn.dribbble.com/users/2228862/screenshots/13561746/ezgif.com-video-to-gif__3_.gif);
+    }
+    50% {
+        right: -1000px;
+        background-image: url(https://media.istockphoto.com/id/1298833125/vector/an-indian-farmer-driving-a-tractor-in-the-agricultural-field.jpg?s=612x612&w=0&k=20&c=ukD7Ao1BRRgMy8soPlpIkXblnazCSXSui6w7pFRk8h8=);   
+    }
+    70% {
+        right: 0px;  
+        background-image: url(https://media.istockphoto.com/id/1298833125/vector/an-indian-farmer-driving-a-tractor-in-the-agricultural-field.jpg?s=612x612&w=0&k=20&c=ukD7Ao1BRRgMy8soPlpIkXblnazCSXSui6w7pFRk8h8=);   
+    }
+    85% {
+        right: 0px;  
+        background-image: url(https://media.istockphoto.com/id/1298833125/vector/an-indian-farmer-driving-a-tractor-in-the-agricultural-field.jpg?s=612x612&w=0&k=20&c=ukD7Ao1BRRgMy8soPlpIkXblnazCSXSui6w7pFRk8h8=);   
+    }
+    99% {
+        background-image: url(https://media.istockphoto.com/id/1298833125/vector/an-indian-farmer-driving-a-tractor-in-the-agricultural-field.jpg?s=612x612&w=0&k=20&c=ukD7Ao1BRRgMy8soPlpIkXblnazCSXSui6w7pFRk8h8=);
+    }
+    99.5% {
+        right: -1000px;
+        background-image: url();  
+    }
+    100% {
+        right: 0px;
+        background-image: url();   
+    }
+}
+
+.container {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(36, 18, 51, 0.2);
+    padding-bottom: 10px;
+}
+
+.container #ititle {
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+.container .intererstbox {
+    padding: 10px;
+}
+
+.container .interest {
+    height: 200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container .interest .cooking {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    content-visibility: hidden;
+}
+
+.container .interest .cooking:hover{
+    height: 300px;
+    width: 450px;
+    border-radius: 0;
+    transition: 0.5s;
+    content-visibility: visible;
+}
+
+.container .interest .travelling {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    content-visibility: hidden;
+}
+
+.container .interest .travelling:hover{
+    height: 300px;
+    width: 450px;
+    border-radius: 0;
+    transition: 0.5s;
+    content-visibility: visible;
+}
+
+.container .interest .animation {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    content-visibility: hidden;
+}
+
+.container .interest .animation:hover{
+    height: 300px;
+    width: 450px;
+    border-radius: 0;
+    transition: 0.5s;
+    content-visibility: visible;
+}
+
+.container .interest:hover {
+    border-style: solid;
+    border-color: #c3eadf;
+    box-shadow: 2px 2px rgba(203, 135, 243, 0.5);
+    background-color: rgba(203, 135, 243, 0.2);
+}
+
+.intererstbox .text {
+    margin-left: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(236, 202, 255, 0.2);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.container .intererstbox img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.container2 {
+    height:400px;
+    width: 1432px;
+    background-color: rgba(31, 2, 48, 0.7);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(245, 236, 252);
+}
+
+.container2 .set_nav .do_disapper {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 690px;
+    margin-top: 20px;
+    background-color: #624D6E;;
+}
+
+.container2 .set_nav nav {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-left: 650px;
+    margin-right: 650px;
+}
+
+.container2 .set_nav nav a {
+    color: rgb(245, 236, 252);
+}
+
+.container2 #wtitle {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.c-site-footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 1, 40);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: solid;
+    border-color: #c3eadf;
+}
+
+.c-site-footer .icon .fb{
+    height: 21px;
+    width: 21px;
+    padding-top: 60px;
+    margin-right: 90px;
+}
+
+.c-site-footer .icon h3 {
+    color: white;
+    position: absolute;
+}
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
